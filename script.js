@@ -201,6 +201,7 @@ window.addEventListener("load", function () {
                     displayHeatOptions(true);
                 } else if (mapLayerValue === "markers") {
                     heatLayer.remove();
+                    choroplethLayer.remove();
                     markersLayer.clearLayers();
                     filteredData.forEach((item) => {
                       // Create a simple red circle marker
